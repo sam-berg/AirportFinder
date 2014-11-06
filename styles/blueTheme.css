@@ -1,0 +1,487 @@
+﻿/*
+ | Version 10.2
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+ */
+/* This file contains the common style settings for "ConfigurablePlaceFinder" template */
+/* Use this file to perform the following: */
+
+/* 1.  Set the body styles                      - { Style(s) to look for: html, body,input[placeholder], [placeholder], *[placeholder] } */
+/* 2.  Set styles for splash screen             - { Style(s) to look for: divSplashScreenContainer,divSplashScreenContent,divSplashScreenContainer,divSplashContent,
+                                                                          customButton,customButtonInner } */
+/* 3.  Set the styles for animations            - { Style(s) to look for: divToggle,slideTransition,hideBottomContainerHeight,showBottomContainerHeight,slideBottomContainerHeight,
+slidePanel,hideContainer,showContainer,hideContainerHeight,showContainerHeight,opacityHideAnimation,esriLogo}*/
+/* 4.  Set the styles for share container       - { Style(s) to look for: divAppContainer,divAppHolder}*/
+/* 5.  Set the styles for application header    - { Style(s) to look for: lblAppName,imgOptions,tableHeader,imgApp,divApplicationHeader,divLogo}*/
+/* 6.  Set the styles for search container      - { Style(s) to look for: divAddressScrollContainer,divAddressScrollContent,tblHeader,divAddressPlaceHolder,divAddressPodPlaceHolder,txtAddress,txtPodAddress
+                                                                          imgLocate,divAddressList,bottomborder,tdSearchByAddress,tdSearchByFeature,tdSearchByActivity,tsSearchByUnSelectedActivity,tdSearchByUnSelectedFeature,tdSearchByUnSelectedAddress,imgSearchLoader,imgPodSearchLoader,imgPodSearchLocate,selectedActivity}*/
+/* 7.  Set the styles for basemap container     - { Style(s) to look for:
+basemapThumbnail,baseMapContainerNode,basemapLabel,divLayerContentHolder,selectedBaseMap}*/
+/* 8.  Set the styles for info window           - { Style(s) to look for: divInfoWindowContainer,divDetails,divCommentsContainer,divInfoDetails,divInfoDirections,divCommentsContent,divInfoDetailsScroll,divInfoDirectionsScroll,divInfoPhotosScroll,tdInfoHeader,divInfoPhotos,divInfoComments,divInfoComments,divInfoDirections,
+divInfodivTriangle,dj_ie .divInfoWindowContainer,ratingStar,ratingStarChecked,ratingStarBig,ratingStarBigChecked,
+divInfoWindowContainer .container,imgInfoWindow,divInfoWindowContainer .content,
+ divInfoWindowContainer .title,imgArrow,txtArea,tdBreakWord,tdBreak}*/
+/* 9.  Set the styles for bottom panel          - { Style(s) to look for: divCarouselContent,divImageBackground,divHeader,divContentStyle,divCarouselDataContent,
+divCarouselDataContainer,transparentBackground,divCommentHolder,divCommentContainer,tblInfoDetails,spanFeatureListContainer,tblInformation,tblAddressContentDirections,spanHeader}*/
+/* 10. Set the styles for custom scrollbar      - { Style(s) to look for: scrollbar_track,scrollbar_handle}*/
+/* 11. Set the styles for loading indicator     - { Style(s) to look for: divLoadingIndicator}*/
+/* 12. Set the styles for image slideshow       - { Style(s) to look for: divImgsBlock,divImageSlide,imgAttachments,text}*/
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Styles for body*/
+
+body, html
+{
+    color: #F5F5DC !important;
+}
+
+input[placeholder], [placeholder], *[placeholder]
+{
+    color: white !important;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* Styles for splash screen*/
+
+.divSplashScreenContainer
+{
+    background: rgba(65,105,225,.65);
+    -pie-background: rgba(65,105,225,.65);
+    behavior: url("styles/PIE.htc");
+}
+
+.divSplashScreenContent
+{
+    background-color:  #376092;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    -o-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.customButton
+{
+    color: #F5F5DC;
+    background-color: #002266;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*animations */
+
+.divToggle
+{
+    color: #F5F5DC;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*Share Container Styles*/
+
+.divAppHolder
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* Header Styles*/
+
+.divApplicationHeader
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*AddressContainer Styles*/
+
+.divAddressContent
+{
+    background-color: #376092;
+}
+
+.divAddressScrollContent
+{
+    color: #F5F5DC;
+}
+
+.tblHeader
+{
+    background-color: #002266;
+    border-bottom: gray 1px solid;
+    behavior: url("styles/PIE.htc");
+}
+ .divAddressPodPlaceHolder
+{
+    border: 1px solid #002266;
+    background-color: #4886b3;
+}
+.divAddressPlaceHolder
+{
+    background-color: rgba(0, 34, 102,1);
+    -pie-background: rgba(0, 34, 102,1);
+    behavior: url("styles/PIE.htc");
+}
+.txtAddress
+{
+    background-color: #002266;
+}
+
+.txtPodAddress
+{
+    background-color: #002266;
+}
+
+.divAddressList
+{
+    color: #F5F5DC;
+    background-color: transparent;
+    border: none;
+    behavior: url("styles/PIE.htc");
+}
+
+.bottomborder
+{
+    border-bottom: 1px solid white;
+}
+.tdSearchByAddress
+{
+    background-color: #AAAAAA;
+}
+
+.tdSearchByFeature
+{
+    background-color: #AAAAAA;
+}
+.tdSearchByActivity
+{
+    background-color: #AAAAAA;
+}
+
+.tdSearchByUnSelectedActivity
+{
+    background:  #002266; /* Old browsers */
+}
+
+.tdSearchByUnSelectedFeature
+{
+    background:  #002266; /* Old browsers */
+}
+
+.tdSearchByUnSelectedAddress
+{
+    background:  #002266; /* Old browsers */
+}
+
+.selectedActivity
+{
+    border: 5px solid #002266 !important;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*Base-map Container Styles*/
+
+.basemapThumbnail
+{
+    -moz-box-shadow: 0 0 7px #000000;
+    -webkit-box-shadow: 0 0 7px #000000;
+    box-shadow: 0 0 7px #000000;
+    behavior: url("styles/PIE.htc");
+    border: 1px solid #fff;
+}
+
+.basemapLabel
+{
+    background-color: transparent;
+    color: #F5F5DC;
+}
+
+.selectedBaseMap
+{
+    -webkit-box-shadow: 0 0 15px #FDDC6C;
+    -moz-box-shadow: 0 0 15px #FDDC6C;
+    box-shadow: 0 0 15px #FDDC6C;
+    behavior: url("styles/PIE.htc");
+}
+
+.divLayerHolder
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*InfoWindow Styles*/
+
+.divInfoContainer
+{
+    background: rgba(55,96,146,0.9);
+    -pie-background: rgba(55,96,146,0.9);
+    behavior: url("styles/PIE.htc");
+}
+.divInfoContent
+{
+    background: rgba(55,96,146,0.9);
+    -pie-background: rgba(55,96,146,0.9);
+}
+
+.divAddressContainer
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+
+.divCommentsContent, .divInfoDetailsScroll, .divInfoDirectionsScroll, .divInfoPhotosScroll
+{
+    color: #F5F5DC;
+}
+
+
+.divInfoWindowContainer
+{
+    background: #376092;
+    behavior: url("styles/PIE.htc");
+    color: #F5F5DC;
+}
+
+.divTriangle
+{
+    border: solid 20px transparent;
+    border-top-color: #376092;
+}
+
+.dj_ie .divInfoWindowContainer
+{
+    border: none;
+}
+
+.divInfoWindowContainer .content
+{
+    color: #F5F5DC;
+}
+
+.divInfoWindowContainer .title
+{
+    color: #F5F5DC;
+    background-color:  #002266;
+    border-bottom: gray 1px solid;
+    behavior: url("styles/PIE.htc");
+}
+
+.infotblHeader
+{
+    background-color: #002266;
+    border-bottom: gray 1px solid;
+}
+
+.ratingStar
+{
+    background-image: url("./images/rating_empty.png");
+}
+
+.ratingStarChecked
+{
+    background-image: url("./images/rating_full.png");
+}
+
+.ratingStarBig
+{
+    background-image: url("./images/rating_empty.png");
+}
+
+.ratingStarBigChecked
+{
+    background-image: url("./images/rating_full.png");
+}
+
+.txtArea
+{
+    border: 1px solid #002266;
+    background-color: #002266;
+    color: #F5F5DC;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* bottom panel CSS*/
+
+.transparentBackground
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+
+.divImageBackground
+{
+    background: rgba(55,96,146,0.90);
+    -pie-background: rgba(55,96,146,0.90);
+    behavior: url("styles/PIE.htc");
+}
+
+.divHeader
+{
+    background-color: #002266;
+    behavior: url("styles/PIE.htc");
+}
+
+.divContentStyle
+{
+    background-color: #376092;
+    behavior: url("styles/PIE.htc");
+}
+
+
+.divCarouselDataContainer
+{
+    background-color: transparent;
+}
+
+.tblAddressContentDirections
+{
+    border-bottom-style: dotted;
+    border-bottom-color: white;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* Styles for custom scrollbar*/
+
+.scrollbar_track
+{
+    background-color: transparent;
+}
+
+.scrollbar_handle
+{
+    background-color: #C0C0C0;
+    behavior: url("styles/PIE.htc");
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*Styles for Loading indicator container*/
+
+.divLoadingIndicator
+{
+    background: #4169e1;
+}
+
+/* Images SlideShow */
+
+.divImgsBlock
+{
+    background: rgba(65,105,225,.65);
+    -pie-background: rgba(65,105,225,.65);
+    behavior: url("styles/PIE.htc");
+}
+
+.divImageSlide
+{
+    filter: alpha(opacity=100);
+    z-index: 1010 !important;
+    background-color: #376092;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    -o-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    behavior: url("styles/PIE.htc");
+}
+
+.text
+{
+    color: #F5F5DC;
+}
+
+.imgAttachments
+{
+    border: 1px solid #fff;
+}
+
+.nodeBackgroundColor
+{
+    background-color: #002266 !important;
+}
+.featureNameWidth
+{
+    border-bottom:2px #002266 solid !important;
+}
+.BufferColor
+{
+   background-color:rgb(73, 110, 154 );
+}
+.RippleColor
+{
+  background-color:rgb(0, 34, 102);
+}
+
+.mainLoader
+{
+    background-image: url("./images/blue-loader.gif");
+}
+
+.tblAddressResultContainer
+{
+    color: #F5F5DC;
+}
+
+.divInfoDetails
+{
+    color: #F5F5DC;
+}
+
+.divInfoComments
+{
+    color: #F5F5DC;
+}
+
+.commentError
+{
+    color: Yellow;
+}
+
+.divCommentsContent, .divInfoDetailsScroll, .divInfoDirectionsScroll, .divInfoPhotosScroll
+{
+    color: #F5F5DC;
+}
+
+.divInfoWindowContainer
+{
+    color: #F5F5DC;
+}
+
+.tblComment
+{
+    color: #fff;
+}
+
+.shareText
+{
+    color: #F5F5DC;
+}
+
+.colorChange
+{
+    color: #fff !important;
+}
+
+.onBlurColorChange
+{
+    color: Gray;
+}
